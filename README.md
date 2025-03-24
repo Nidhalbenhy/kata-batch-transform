@@ -10,7 +10,7 @@
 
         Java 17 : Assurez-vous d'avoir installé Java 17 sur votre machine.
 
-        Maven 3.3 : Vous aurez besoin de Maven 3 pour construire l'application.
+        Maven 3 : Vous aurez besoin de Maven 3 pour construire l'application.
 
         Docker : Vous aurez besoin de Docker pour exécuter l'application dans un conteneur.
 
