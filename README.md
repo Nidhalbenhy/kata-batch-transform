@@ -5,7 +5,7 @@
             en une chaîne encaractères selon des règles dans le fichier PDF.
         . Un endpoint permettant de transformer un nombre en une chaîne encaractères selon les memes règles.
 
-    Prérequis
+**Prérequis**
         Avant d'exécuter le projet, assurez-vous d'avoir installé les outils suivants :
 
         Java 17 : Assurez-vous d'avoir installé Java 17 sur votre machine.
@@ -15,29 +15,29 @@
         Docker : Vous aurez besoin de Docker pour exécuter l'application dans un conteneur.
 
 
-    Étapes d'exécution:
+**Étapes d'exécution:**
 
-        1. Clonez ce projet:
+   __1. Clonez ce projet:__
 
             git clone <url_du_repertoire>.
 
-        2. Construisez l'application:
+   __2. Construisez l'application:__
 
             Exécutez la commande suivante pour générer le fichier JAR de l'application :
                 .mvn clean package
             Cela générera un fichier JAR dans le répertoire target/(exemple: Kata-batch-transform-0.0.1-SNAPSHOT.jar).
 
-        3. Construire l'image Docker
+   __3. Construire l'image Docker__
 
             Exécuter la commande suivante dans le répertoire de ton projet :
                  docker build -t kata-batch-transform .
 
-        4. Exécuter l'application Dockerisée
+   __4. Exécuter l'application Dockerisée__
 
             Pour exécuter l'application dans un conteneur Docker. Exécutez la commande suivante :
                 docker run -v C:/input:/app/input -v C:/output:/app/output -p 8083:8083 kata-batch-transform
     
-        5. Accéder à l'application
+   __5. Accéder à l'application__
              l'application sera disponible sur le port 8083
 
             - Pour tester Endpoint il suffit de taper dans le navigateur: 
